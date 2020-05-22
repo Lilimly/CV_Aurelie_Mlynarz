@@ -11,6 +11,11 @@
   margin: 2em auto 2em auto;
 }
 
+span
+{
+  margin-right: 10px;
+}
+
 /* éléments section gauche de la page */
 
 #gauche
@@ -77,6 +82,11 @@
   padding-bottom: 30px;
 }
 
+#mes_loisirs span
+{
+  margin-right: 0px;
+}
+
 a
 {
 	color: #404040;
@@ -109,30 +119,51 @@ a:hover
 
 #moi
 {
-  padding-bottom: 60px;
+  padding-bottom: 50px;
 }
 
 #moi h1
 {
   color: #FF6347;
-  font-size: 2em
+  font-size: 2.3em;
+  font-weight: lighter;
 }
 
 #moi h2
 {
-  border-bottom: 2px solid #FF6347;
+  font-weight: lighter;
+  font-size: 1.5em;
+}
+
+.nom
+{
+  color: #404040;
+}
+
+.border
+{
+  border-bottom: 1px solid #FF6347;
+  margin-right: 0px;
 }
 
 #formation, #expériences, #recommandations
 {
   font-size: 0.8em;
-  border-bottom: 2px solid #FF6347;
+  border-bottom: 1px solid #FF6347;
 }
 
 #formation1, #formation2, #formation3, #expérience1, #expérience2, #expérience3
 {
   display: flex;
 	justify-content: space-between;
+}
+
+#puce1, #puce2, #puce3, #puce4, #puce5, #puce6
+{
+  display: flex;
+	flex-direction: row;
+  align-items: baseline;
+  
 }
 
 #mes_recommandations
@@ -170,8 +201,12 @@ a:hover
     {
       order: 1;
       width: auto;
-      padding-bottom: 15px;
-      padding-top: 15px;
+      padding: 15px;
+    }
+
+    h2
+    {
+      font-size: 1.3em;
     }
 
     #moi
@@ -188,5 +223,16 @@ a:hover
     {
       padding-bottom: 10px;
       padding-top : 10px;
+    }
+
+    #formation1, #formation2, #formation3, #expérience1, #expérience2, #expérience3
+    {
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    #openclassrooms, #etsup, #irts, #gotripics, #abc, #amstram
+    {
+      width: auto;
     }
 }
