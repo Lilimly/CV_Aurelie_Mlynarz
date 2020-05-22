@@ -1,4 +1,192 @@
+/* éléments principaux de la page */
 *
 {
-  background-color: grey;
+  font-family: 'Trebuchet MS', Arial, Verdana, sans-serif;
+}
+
+#cv
+{
+  display: flex;
+  width: 950px;
+  margin: 2em auto 2em auto;
+}
+
+/* éléments section gauche de la page */
+
+#gauche
+{
+  background-color: #FF6347;
+  color: #FAFAFA;
+  width: 250px;
+}
+
+#gauche h2
+{
+  text-align: center;
+}
+
+#gauche p
+{
+  text-align: justify;
+  font-size: 0.8em;
+  padding: 3px 15px 3px 15px ;
+}
+
+#contact, #a_propos, #loisirs
+{
+  background-color: #404040;
+  height: 33px;
+  font-size: 0.8em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#photo
+{
+  text-align: center;
+}
+
+#photo img
+{
+  border: 1px solid #404040;
+  border-radius: 500px;
+  margin: 3.5em auto 3.3em auto
+}
+
+#mes_contacts
+{
+  padding-top: 15px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+}
+
+#propos
+{
+  padding-top: 15px;
+  padding-bottom: 210px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+#mes_loisirs
+{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+a
+{
+	color: #404040;
+}
+
+a:hover 
+{
+	color: darkred;
+}
+
+/* éléments section droite de la page */
+
+#droite
+{
+  background-color: #FAFAFA;
+  color: #404040;
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+}
+
+#droite p
+{
+  text-align: justify;
+  font-size: 0.8em;
+  
+}
+
+#moi
+{
+  padding-bottom: 60px;
+}
+
+#moi h1
+{
+  color: #FF6347;
+  font-size: 2em
+}
+
+#moi h2
+{
+  border-bottom: 2px solid #FF6347;
+}
+
+#formation, #expériences, #recommandations
+{
+  font-size: 0.8em;
+  border-bottom: 2px solid #FF6347;
+}
+
+#formation1, #formation2, #formation3, #expérience1, #expérience2, #expérience3
+{
+  display: flex;
+	justify-content: space-between;
+}
+
+#mes_recommandations
+{
+  display: flex;
+	justify-content: space-around;
+}
+
+#openclassrooms, #etsup, #irts, #gotripics, #abc, #amstram
+{
+  width: 80%;
+}
+
+/* règles au format responsive avec les media queries */
+@viewport 
+{
+  width: device-width;
+}
+
+@media all and (max-width: 1024px)
+{
+    #cv
+    {
+      flex-direction: column;
+      width: auto;
+      margin: auto;
+    }
+    #gauche:nth-child(1)
+    {
+      order: 2;
+      width: auto;
+    }
+
+    #droite:nth-child(2)
+    {
+      order: 1;
+      width: auto;
+      padding-bottom: 15px;
+      padding-top: 15px;
+    }
+
+    #moi
+    {
+      padding-bottom: 15px;
+    }
+
+    #photo
+    {
+      display: none;
+    }
+
+    #propos, #mes_contacts, #mes_recommandations
+    {
+      padding-bottom: 10px;
+      padding-top : 10px;
+    }
 }
