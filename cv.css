@@ -284,11 +284,6 @@ span
 }
 
 /* règles au format responsive avec les media queries */
-@viewport 
-{
-  width: device-width;
-}
-
 @media all and (max-width: 1000px)
 {
   header
