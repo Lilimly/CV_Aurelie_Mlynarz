@@ -15,7 +15,7 @@ header
     display: flex;
     justify-content: center;
     width: 950px;
-    margin: 30px auto auto auto;
+    margin: 20px auto auto auto;
 }
 
 #photo
@@ -30,8 +30,8 @@ header
 {
   border: 3.5px solid rgba(64, 64, 64, 0.2);
   border-radius: 50%;
-  margin-top: 3em;
-  margin-bottom: 3em;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 #me
@@ -149,18 +149,13 @@ a:hover
   font-size: 0.8em;
 }
 
-#graduation, #jobs
+.title
 { font-size: 0.8em;
+  height: 45px;
   border-bottom: 1px solid #FF6347;
-  height: 33px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-#jobs
-{
-  margin-top: 10px;
+  flex-direction: row;
+  align-items: baseline;
 }
 
 .cursus
@@ -180,7 +175,7 @@ footer
   display: flex;
   justify-content: center;
   width: 950px;
-  margin: auto auto 30px auto;
+  margin: auto auto 20px auto;
 }
 
 #footer_left
@@ -219,16 +214,6 @@ footer
   color: #404040;
 }
 
-#recommendation
-{
-  font-size: 0.8em;
-  border-bottom: 1px solid #FF6347;
-  height: 33px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 #my_recommendation
 {
   display: flex;
@@ -256,7 +241,7 @@ span
 
 .icon_title
 {
-  font-size: 1.2em; 
+  font-size: 1.5em; 
   color: #FF6347;
 }
 
@@ -264,10 +249,6 @@ span
 {
   font-size: 2em; 
   color: #404040;
-}
-
-#my_leisure span
-{
   margin-right: 0px;
 }
 
@@ -361,6 +342,15 @@ span
     justify-content: space-between;
   }
 
+  .title
+{
+  height: auto;
+  display: flex;
+	flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+}
+
   .company
   {
     width: auto;
@@ -381,18 +371,15 @@ span
   #footer_right
   {
     width: auto;
-    margin: 0px;
     padding: 10px;
   } 
 
-  #recommendation
+  #my_recommendation
   {
-    width: auto;
-    height: auto;
-    margin: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    width: auto;
+    text-align: center;
   }
 
   #my_leisure
