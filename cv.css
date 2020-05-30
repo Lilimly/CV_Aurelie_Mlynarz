@@ -4,40 +4,100 @@
   font-family: 'Trebuchet MS', Arial, Verdana, sans-serif;
 }
 
-#cv
+h3
+{
+  font-size: 0.8em;
+}
+
+/* propriétés du header */
+header
+{
+    display: flex;
+    justify-content: center;
+    width: 950px;
+    margin: 30px auto auto auto;
+}
+
+#photo
+{
+  text-align: center;
+  background-color: #FF6347;
+  color: #FAFAFA;
+  width: 250px;
+}
+
+#photo img
+{
+  border: 3.5px solid rgba(64, 64, 64, 0.2);
+  border-radius: 50%;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+#me
+{
+  background-color: #FAFAFA;
+  color: #404040;
+  width: 700px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+#me h1
+{
+  color: #FF6347;
+  font-size: 2.3em;
+  font-weight: lighter;
+}
+
+#me h2
+{
+  font-weight: lighter;
+  font-size: 1.5em;
+}
+
+.name
+{
+  color: #404040;
+}
+
+.border
+{
+  border-bottom: 1px solid #FF6347;
+  margin-right: 0px;
+}
+
+/* éléments généraux de la section "container" */
+#container
 {
   display: flex;
   width: 950px;
-  margin: 2em auto 2em auto;
+  margin: auto;
 }
 
-span
-{
-  margin-right: 10px;
-}
+/* éléments du "aside" de la page */
 
-/* éléments section gauche de la page */
-
-#gauche
+aside
 {
   background-color: #FF6347;
   color: #FAFAFA;
   width: 250px;
 }
 
-#gauche h2
+aside h2
 {
   text-align: center;
 }
 
-#gauche p
+aside p
 {
-    text-align: justify;
+  text-align: justify;
   font-size: 0.8em;
   padding: 3px 15px 3px 15px ;
 }
 
-#contact, #a_propos, #loisirs
+#contact, #about_title
 {
   background-color: #404040;
   height: 33px;
@@ -47,44 +107,18 @@ span
   justify-content: center;
 }
 
-#photo
-{
-  text-align: center;
-}
-
-#photo img
-{
-  border: 0.5px solid #404040;
-  border-radius: 500px;
-  margin: 3.5em auto 3.3em auto
-}
-
-#mes_contacts
+#my_contact
 {
   padding-top: 15px;
   padding-bottom: 30px;
   padding-left: 10px;
 }
 
-#propos
+#about
 {
   padding-top: 15px;
-  padding-bottom: 210px;
   padding-right: 10px;
   padding-left: 10px;
-}
-
-#mes_loisirs
-{
-  display: flex;
-  justify-content: space-around;
-  padding-top: 45px;
-  padding-bottom: 45px;
-}
-
-#mes_loisirs span
-{
-  margin-right: 0px;
 }
 
 a
@@ -97,84 +131,156 @@ a:hover
 	color: darkred;
 }
 
-/* éléments section droite de la page */
+/* éléments de la div "right" de la page */
 
-#droite
+#right
 {
   background-color: #FAFAFA;
   color: #404040;
   width: 700px;
   display: flex;
   flex-direction: column;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+#right p
+{
+  font-size: 0.8em;
+}
+
+#graduation, #jobs
+{ font-size: 0.8em;
+  border-bottom: 1px solid #FF6347;
+  height: 33px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  padding: 50px;
 }
 
-#droite p
+#jobs
 {
-  
-  font-size: 0.8em;
-  
+  margin-top: 10px;
 }
 
-#moi
-{
-  padding-bottom: 50px;
-}
-
-#moi h1
-{
-  color: #FF6347;
-  font-size: 2.3em;
-  font-weight: lighter;
-}
-
-#moi h2
-{
-  font-weight: lighter;
-  font-size: 1.5em;
-}
-
-.nom
-{
-  color: #404040;
-}
-
-.border
-{
-  border-bottom: 1px solid #FF6347;
-  margin-right: 0px;
-}
-
-#formation, #expériences, #recommandations
-{
-  font-size: 0.8em;
-  border-bottom: 1px solid #FF6347;
-}
-
-#formation1, #formation2, #formation3, #expérience1, #expérience2, #expérience3
+.cursus
 {
   display: flex;
 	justify-content: space-between;
 }
 
-#puce1, #puce2, #puce3, #puce4, #puce5, #puce6
+.company
+{
+  width: 80%;
+}
+
+/*  éléments du footer */
+footer
+{
+  display: flex;
+  justify-content: center;
+  width: 950px;
+  margin: auto auto 30px auto;
+}
+
+#footer_left
+{
+  width: 250px;
+}
+
+#leisure
+{
+  background-color: #404040;
+  color: #FAFAFA;
+  height: 33px;
+  font-size: 0.8em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#my_leisure
+{
+  background-color: #FF6347;
+  color: #FAFAFA;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#footer_right
+{
+  width: 700px;
+  padding-right: 30px;
+  padding-left: 30px;
+  background-color: #FAFAFA;
+  color: #404040;
+}
+
+#recommendation
+{
+  font-size: 0.8em;
+  border-bottom: 1px solid #FF6347;
+  height: 33px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#my_recommendation
+{
+  display: flex;
+  justify-content: space-around;
+}
+
+#my_recommendation p
+{
+  font-size: 0.8em;
+}
+
+/* éléments font-awesome */
+span
+{
+  margin-right: 10px;
+}
+
+.icon
 {
   display: flex;
 	flex-direction: row;
   align-items: baseline;
-  
+  font-weight: bold;
 }
 
-#mes_recommandations
+.icon_title
 {
-  display: flex;
-	justify-content: space-around;
+  font-size: 1.2em; 
+  color: #FF6347;
 }
 
-#openclassrooms, #etsup, #irts, #gotripics, #abc, #amstram
+.icon_leisure
 {
-  width: 80%;
+  font-size: 2em; 
+  color: #404040;
+}
+
+#my_leisure span
+{
+  margin-right: 0px;
+}
+
+.circle
+{
+  font-size: 0.6em; 
+  color: #FF6347;
+}
+
+.arrow
+{
+  font-size: 0.8em; 
+  color: #FF6347;
 }
 
 /* règles au format responsive avec les media queries */
@@ -183,56 +289,120 @@ a:hover
   width: device-width;
 }
 
-@media all and (max-width: 1024px)
+@media all and (max-width: 1000px)
 {
-    #cv
-    {
-      flex-direction: column;
-      width: auto;
-      margin: auto;
-    }
-    #gauche:nth-child(1)
-    {
-      order: 2;
-      width: auto;
-    }
+  header
+  {
+    width: auto;
+    margin: auto;
+    flex-direction: column;
+  }
 
-    #droite:nth-child(2)
-    {
-      order: 1;
-      width: auto;
-      padding: 15px;
-    }
+  h2
+  {
+    font-size: 1.3em;
+  }
 
-    h2
-    {
-      font-size: 1.3em;
-    }
+  #photo img
+{
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
 
-    #moi
-    {
-      padding-bottom: 15px;
-    }
+  #photo:nth-child(1)
+  {
+    order: 2;
+    width: auto;
+    background-color: #FAFAFA;
+    padding-bottom: 10px;
+  }
 
-    #photo
-    {
-      display: none;
-    }
+  #me:nth-child(2)
+  {
+    order: 1;
+    width: auto;
+    margin: 0px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    text-align: center;
+  }
 
-    #propos, #mes_contacts, #mes_recommandations
-    {
-      padding-bottom: 10px;
-      padding-top : 10px;
-    }
+  #container
+  {
+    flex-direction: column;
+    width: auto;
+    margin: auto;
+  }
 
-    #formation1, #formation2, #formation3, #expérience1, #expérience2, #expérience3
-    {
-      flex-direction: column;
-      justify-content: space-between;
-    }
+  aside:nth-child(1)
+  {
+    order: 2;
+    width: auto;
+    margin: auto;
+  }
 
-    #openclassrooms, #etsup, #irts, #gotripics, #abc, #amstram
-    {
-      width: auto;
-    }
+  #about, #my_contact
+  {
+    padding-bottom: 10px;
+    padding-top : 10px;
+  }
+
+  #my_contact p
+  {
+    text-align: center;
+  }
+
+  #right:nth-child(2)
+  {
+    order: 1;
+    width: auto;
+    margin: auto;
+    padding: 15px;
+  }
+
+  .cursus
+  {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .company
+  {
+    width: auto;
+  } 
+
+  footer
+  {
+    width: auto;
+    margin: auto;
+    flex-direction: column;
+  }
+
+  #footer_left
+  {
+    width: auto;
+  }
+
+  #footer_right
+  {
+    width: auto;
+    margin: 0px;
+    padding: 10px;
+  } 
+
+  #recommendation
+  {
+    width: auto;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #my_leisure
+  {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
