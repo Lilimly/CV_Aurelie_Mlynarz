@@ -4,7 +4,7 @@
   font-family: 'Trebuchet MS', Arial, Verdana, sans-serif;
 }
 
-h3
+h3, p
 {
   font-size: 0.8em;
 }
@@ -93,7 +93,6 @@ aside h2
 aside p
 {
   text-align: justify;
-  font-size: 0.8em;
   padding: 3px 15px 3px 15px ;
 }
 
@@ -142,11 +141,6 @@ a:hover
   flex-direction: column;
   padding-right: 30px;
   padding-left: 30px;
-}
-
-#right p
-{
-  font-size: 0.8em;
 }
 
 .title
@@ -218,11 +212,6 @@ footer
 {
   display: flex;
   justify-content: space-around;
-}
-
-#my_recommendation p
-{
-  font-size: 0.8em;
 }
 
 /* éléments font-awesome */
