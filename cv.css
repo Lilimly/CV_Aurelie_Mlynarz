@@ -236,9 +236,16 @@ span
 
 .icon_leisure
 {
-  font-size: 2em; 
-  color: #404040;
   margin-right: 0px;
+  width: 45px;
+  height: 45px;
+  font-size: 1.9em;
+  color: #404040;
+  border: 2px solid #404040;
+  border-radius: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .circle
@@ -247,7 +254,7 @@ span
   color: #FF6347;
 }
 
-.arrow
+.dot_circle
 {
   font-size: 0.8em; 
   color: #FF6347;
