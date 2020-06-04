@@ -3,7 +3,7 @@
 	<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="cv.css" />
+    <link rel="stylesheet" href="css/cv.css" />
     <link rel="shortcut icon" href="images/favicon.ico" />
     <script src="https://kit.fontawesome.com/e1e907064b.js" crossorigin="anonymous"></script>
 		<title>Aurélie MLYNARZ - Développeuse web</title>
@@ -19,12 +19,12 @@
         <h2><span class="border">Dével</span>oppeuse web freelance</h2>
       </div>
     </header>
-    <div id="container">
+    <main>
       <aside>
-        <div id="contact">
+        <div class="title_left">
           <h2>CONTACT</h2>
         </div>
-        <div id="my_contact">
+        <div id="contact">
           <p>Adresse<br />
           7 cité Paradis<br />
           75010 PARIS</p>
@@ -37,7 +37,7 @@
           <p>Linkedin<br />
             <a href="https://www.linkedin.com/in/aurelie-mlynarz-1899421a1/" title="Aurélie Mlynarz" target="_blank">Aurélie Mlynarz</a></p>
         </div>
-        <div id="about_title">
+        <div class="title_left">
           <h2>À PROPOS DE MOI</h2>
         </div>
         <div id="about">
@@ -45,9 +45,23 @@
           <p>Passionnée de voyages, c'est à l'occasion d'un tour du monde en septembre 2018 que j'ai créé mon blog.</p>
           <p>C'est par ce biais que j'ai décidé de me former professionnellement au métier de développeur web, afin d'acquerir de nouvelles compétences et de participer à de nouveaux projets.</p>
         </div>
+        <div class="title_left">
+          <h2>LOISIRS</h2>
+        </div>
+        <div id="leisure">
+          <span class="icon_leisure">
+            <i class="fas fa-hiking"></i>
+          </span>
+          <span class="icon_leisure">
+            <i class="fas fa-plane-departure"></i>
+          </span>
+          <span class="icon_leisure">
+            <i class="fas fa-swimmer"></i>
+          </span>
+        </div>
       </aside>
-      <section id="right">
-        <div class="title">
+      <section>
+        <div class="title_right">
           <span class="icon_title">
             <i class="fas fa-graduation-cap"></i></span>
           <h2>FORMATION</h2>
@@ -92,7 +106,7 @@
             <p>Obtention du Diplome d'État d'Éducatrice de Jeunes Enfants en décembre 2004.</p>
           </div>
         </div>
-        <div class="title">
+        <div class="title_right">
           <span class="icon_title">
             <i class="fas fa-laptop"></i></span>
           <h2>EXPÉRIENCE PROFESSIONNELLE</h2>
@@ -107,8 +121,7 @@
           <div class="company">
             <h3>GOTRIPICS</h3>
             <p>Responsable éditorial et Community Manager</p>
-            <p>Depuis sa création en septembre 2018, je participe au développement et à l'animation du blog et des comptes Facebook, Instagram et Pinterest.<br />
-            J'organise et planifie la création de contenu ainsi que la stratégie de présence de la marque sur les réseaux sociaux.<br />
+            <p>Depuis sa création en 2018, je participe au développement et à l'animation du blog et des comptes Facebook, Instagram et Pinterest. J'organise et planifie la création de contenu ainsi que la stratégie de présence sur les réseaux sociaux.<br />
             Afin d'optimiser le blog, j'effectue une veille technologique et concurrentielle ainsi qu'une analyse de l'évolution des chiffres d'audience et du référencement SEO.</p>
           </div>
         </div>
@@ -122,8 +135,8 @@
             <div class="company">
             <h3>ABC PUÉRICULTURE</h3>
             <p>Directrice d'une crèche associative</p>
-            <p>Durant ces 9 années, j'ai encadré une équipe pluridisciplinaire de 10 professionnels afin de participer à l'accompagnement et l'éveil d’un groupe de 30 enfants de 6 mois à 3 ans.<br />
-            J'ai mis en place le projet pédagogique en collaboration avec l’équipe éducative et animé des réunions.<br />
+            <p>Durant 9 ans, j'ai encadré une équipe pluridisciplinaire de 10 professionnels afin de participer à l'accompagnement et l'éveil d’un groupe de 30 enfants de 6 mois à 3 ans.<br />
+            J'ai mis en place le projet pédagogique en collaboration avec l’équipe éducative.<br />
             Pour le bien-être et le suivi des enfants et des familles accueillies, j'ai travaillé en lien avec nos partenaires (Mairie, PMI, Psychologue,
             Pédiatre, IME, Paris Habitat...).</p>
           </div>
@@ -142,32 +155,12 @@
             J'ai organisé et animé des réunions pédagogiques dans le but de créer une cohérence d'équipe et favoriser le bien-être des enfants et des familles accueillies.</p>
           </div>
         </div>
-      </section>
-    </div>
-    <footer>
-      <div id="footer_left">
-        <div id="leisure">
-          <h2>LOISIRS</h2>
-        </div>
-        <div id="my_leisure">
-          <span class="icon_leisure">
-            <i class="fas fa-hiking"></i>
-          </span>
-          <span class="icon_leisure">
-            <i class="fas fa-plane-departure"></i>
-          </span>
-          <span class="icon_leisure">
-            <i class="fas fa-swimmer"></i>
-          </span>
-        </div>
-      </div>
-      <div id="footer_right">
-        <div class="title">
+        <div class="title_right">
           <span class="icon_title">
             <i class="fas fa-pencil-alt"></i></span>
           <h2>RECOMMANDATIONS</h2>
         </div>
-        <div id="my_recommendation">
+        <div id="recommendation">
           <div>
             <h3>MICHEL DUPONT</h3>
             <p>Directeur, Mon Agence</p>
@@ -181,6 +174,12 @@
             <p>ilegrand@gmail.com</p>
           </div>
         </div>
+      </section>
+    </main>
+    <footer>
+      <div id="footer_left">
+      </div>
+      <div id="footer_right">
       </div>
     </footer>
    </body>

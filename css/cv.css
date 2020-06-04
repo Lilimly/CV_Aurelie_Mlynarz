@@ -1,12 +1,30 @@
+/* fonts */
+@font-face {
+  font-family: 'amblelight';
+  src: url('Amble-Light-webfont.eot');
+  src: url('Amble-Light-webfont.eot?#iefix') format('embedded-opentype'),
+       url('Amble-Light-webfont.woff2') format('woff2'),
+       url('Amble-Light-webfont.woff') format('woff'),
+       url('Amble-Light-webfont.ttf') format('truetype'),
+       url('Amble-Light-webfont.svg#amblelight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* éléments principaux de la page */
 *
 {
-  font-family: 'Trebuchet MS', Arial, Verdana, sans-serif;
+  font-family: 'amblelight', 'Trebuchet MS', Verdana, sans-serif;
 }
 
 h3, p
 {
   font-size: 0.8em;
+}
+
+body
+{
+  background-color: #282728;
 }
 
 /* propriétés du header */
@@ -21,8 +39,8 @@ header
 #photo
 {
   text-align: center;
-  background-color: #FF6347;
-  color: #FAFAFA;
+  background-color: #feca07;
+  color: #ffffff;
   width: 250px;
 }
 
@@ -36,7 +54,7 @@ header
 
 #me
 {
-  background-color: #FAFAFA;
+  background-color: #ffffff;
   color: #404040;
   width: 700px;
   padding-right: 30px;
@@ -46,78 +64,83 @@ header
 
 #me h1
 {
-  color: #FF6347;
+  color: #feca07;
   font-size: 2.3em;
-  font-weight: lighter;
+  
 }
 
 #me h2
 {
-  font-weight: lighter;
+  
   font-size: 1.5em;
 }
 
 .name
 {
   color: #404040;
+  font-weight: lighter;
 }
 
 .border
 {
-  border-bottom: 1px solid #FF6347;
+  border-bottom: 1px solid #feca07;
   margin-right: 0px;
 }
 
-/* éléments généraux de la section "container" */
-#container
+/* éléments généraux "main" */
+main
 {
   display: flex;
   width: 950px;
   margin: auto;
 }
 
-/* éléments du "aside" de la page */
+/* éléments "aside" de la page */
 
 aside
 {
-  background-color: #FF6347;
-  color: #FAFAFA;
+  background-color: #feca07;
   width: 250px;
-}
-
-aside h2
-{
-  text-align: center;
 }
 
 aside p
 {
-  text-align: justify;
+  text-align: left;
   padding: 3px 15px 3px 15px ;
+  color: #404040;
 }
 
-#contact, #about_title
+.title_left
 {
   background-color: #404040;
+  color: #feca07;
   height: 33px;
   font-size: 0.8em;
+  font-weight: bold;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
 }
 
-#my_contact
+#contact
 {
-  padding-top: 15px;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 40px;
   padding-left: 10px;
 }
 
 #about
 {
-  padding-top: 15px;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding: 20px 10px 160px 10px;
+}
+
+#leisure
+{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 a
@@ -130,11 +153,11 @@ a:hover
 	color: darkred;
 }
 
-/* éléments de la div "right" de la page */
+/* éléments "section" de la page */
 
-#right
+section
 {
-  background-color: #FAFAFA;
+  background-color: #ffffff;
   color: #404040;
   width: 700px;
   display: flex;
@@ -143,10 +166,11 @@ a:hover
   padding-left: 30px;
 }
 
-.title
+.title_right
 { font-size: 0.8em;
+  font-weight: bold;
   height: 45px;
-  border-bottom: 1px solid #FF6347;
+  border-bottom: 1px solid #feca07;
   display: flex;
   flex-direction: row;
   align-items: baseline;
@@ -161,6 +185,24 @@ a:hover
 .company
 {
   width: 80%;
+
+}
+
+.company h3
+{
+  font-size: 1em;
+  font-weight: bold;
+}
+
+span p
+{
+  font-weight: bold;
+}
+
+#recommendation
+{
+  display: flex;
+  justify-content: space-around;
 }
 
 /*  éléments du footer */
@@ -168,50 +210,10 @@ footer
 {
   display: flex;
   justify-content: center;
+  background-color: #282728;
   width: 950px;
-  margin: auto auto 20px auto;
-}
-
-#footer_left
-{
-  width: 250px;
-}
-
-#leisure
-{
-  background-color: #404040;
-  color: #FAFAFA;
-  height: 33px;
-  font-size: 0.8em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
-#my_leisure
-{
-  background-color: #FF6347;
-  color: #FAFAFA;
-  display: flex;
-  justify-content: space-around;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-#footer_right
-{
-  width: 700px;
-  padding-right: 30px;
-  padding-left: 30px;
-  background-color: #FAFAFA;
-  color: #404040;
-}
-
-#my_recommendation
-{
-  display: flex;
-  justify-content: space-around;
+  height: 20px;
+  margin: auto;
 }
 
 /* éléments font-awesome */
@@ -231,7 +233,7 @@ span
 .icon_title
 {
   font-size: 1.5em; 
-  color: #FF6347;
+  color: #feca07;
 }
 
 .icon_leisure
@@ -251,18 +253,23 @@ span
 .circle
 {
   font-size: 0.6em; 
-  color: #FF6347;
+  color: #feca07;
 }
 
 .dot_circle
 {
   font-size: 0.8em; 
-  color: #FF6347;
+  color: #feca07;
 }
 
 /* règles au format responsive avec les media queries */
 @media all and (max-width: 1000px)
 {
+  body
+  {
+    background-color: #ffffff;
+  }
+
   header
   {
     width: auto;
@@ -273,19 +280,18 @@ span
   h2
   {
     font-size: 1.3em;
+    height: auto;
   }
 
   #photo img
 {
-  margin-top: 0em;
-  margin-bottom: 0em;
+  margin-bottom: 1em;
 }
 
   #photo:nth-child(1)
   {
     order: 2;
     width: auto;
-    background-color: #FAFAFA;
     padding-bottom: 10px;
   }
 
@@ -299,37 +305,50 @@ span
     text-align: center;
   }
 
-  #container
+  main
   {
     flex-direction: column;
     width: auto;
     margin: auto;
   }
 
-  aside:nth-child(1)
+  aside
   {
-    order: 2;
     width: auto;
     margin: auto;
   }
 
-  #about, #my_contact
+  #about, #contact
   {
     padding-bottom: 10px;
     padding-top : 10px;
   }
 
-  #my_contact p
+  #contact p
   {
     text-align: center;
   }
 
-  #right:nth-child(2)
+  #leisure
   {
-    order: 1;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  section
+  {
     width: auto;
     margin: auto;
     padding: 15px;
+  }
+
+  .title_right
+  {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
   }
 
   .cursus
@@ -338,49 +357,22 @@ span
     justify-content: space-between;
   }
 
-  .title
-{
-  height: auto;
-  display: flex;
-	flex-direction: row;
-  align-items: baseline;
-  justify-content: center;
-}
-
   .company
   {
     width: auto;
-  } 
+  }
+  
+  #recommendation
+{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
 
   footer
   {
     width: auto;
     margin: auto;
-    flex-direction: column;
-  }
-
-  #footer_left
-  {
-    width: auto;
-  }
-
-  #footer_right
-  {
-    width: auto;
-    padding: 10px;
-  } 
-
-  #my_recommendation
-  {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    text-align: center;
-  }
-
-  #my_leisure
-  {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    background-color: #ffffff;
   }
 }
