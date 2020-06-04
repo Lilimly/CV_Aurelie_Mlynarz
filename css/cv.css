@@ -3,7 +3,6 @@
   font-family: 'amblelight';
   src: url('Amble-Light-webfont.eot');
   src: url('Amble-Light-webfont.eot?#iefix') format('embedded-opentype'),
-       url('Amble-Light-webfont.woff2') format('woff2'),
        url('Amble-Light-webfont.woff') format('woff'),
        url('Amble-Light-webfont.ttf') format('truetype'),
        url('Amble-Light-webfont.svg#amblelight') format('svg');
@@ -41,22 +40,22 @@ header
   text-align: center;
   background-color: #feca07;
   color: #ffffff;
-  width: 250px;
+  width: 275px;
 }
 
 #photo img
 {
   border: 3.5px solid rgba(64, 64, 64, 0.2);
   border-radius: 50%;
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
 }
 
 #me
 {
   background-color: #ffffff;
   color: #404040;
-  width: 700px;
+  width: 675px;
   padding-right: 30px;
   padding-left: 30px;
   padding-top: 30px;
@@ -65,14 +64,8 @@ header
 #me h1
 {
   color: #feca07;
-  font-size: 2.3em;
-  
-}
-
-#me h2
-{
-  
-  font-size: 1.5em;
+  font-size: 2.5em;
+  font-weight: bolder;
 }
 
 .name
@@ -100,7 +93,7 @@ main
 aside
 {
   background-color: #feca07;
-  width: 250px;
+  width: 275px;
 }
 
 aside p
@@ -114,8 +107,7 @@ aside p
 {
   background-color: #404040;
   color: #feca07;
-  height: 33px;
-  font-size: 0.8em;
+  height: 35px;
   font-weight: bold;
   display: flex;
   flex-direction: column;
@@ -132,7 +124,7 @@ aside p
 
 #about
 {
-  padding: 20px 10px 160px 10px;
+  padding: 20px 10px 240px 10px;
 }
 
 #leisure
@@ -159,21 +151,22 @@ section
 {
   background-color: #ffffff;
   color: #404040;
-  width: 700px;
+  width: 675px;
   display: flex;
   flex-direction: column;
   padding-right: 30px;
   padding-left: 30px;
+  padding-bottom: 10px;
 }
 
 .title_right
-{ font-size: 0.8em;
-  font-weight: bold;
+{ font-weight: bold;
   height: 45px;
   border-bottom: 1px solid #feca07;
   display: flex;
   flex-direction: row;
   align-items: baseline;
+  padding-bottom: 8px;
 }
 
 .cursus
@@ -279,7 +272,6 @@ span
 
   h2
   {
-    font-size: 1.3em;
     height: auto;
   }
 
@@ -349,6 +341,7 @@ span
     flex-direction: row;
     align-items: baseline;
     justify-content: center;
+    padding-bottom: 0px;
   }
 
   .cursus
@@ -367,6 +360,11 @@ span
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+
+span p
+{
+  font-size: 0.8em;
 }
 
   footer
