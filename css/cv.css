@@ -72,7 +72,13 @@ header
 #me h1
 {
   color: #feca07;
-  font-size: 2.5em;
+  font-size: 3em;
+  font-family: 'ambleregular', sans-serif;
+  font-weight: bold;
+}
+
+#me h2
+{
   font-family: 'ambleregular', sans-serif;
   font-weight: bold;
 }
@@ -172,6 +178,13 @@ section
   padding-bottom: 10px;
 }
 
+h3
+{
+  font-size: 1em;
+  font-family: 'ambleregular', sans-serif;
+  font-weight: bold;
+}
+
 .title_right
 { font-family: 'ambleregular', sans-serif;
   font-weight: bold;
@@ -193,19 +206,6 @@ section
 {
   width: 80%;
 
-}
-
-h3
-{
-  font-size: 1em;
-  font-family: 'ambleregular', sans-serif;
-  font-weight: bold;
-}
-
-.icon
-{
-  font-family: 'ambleregular', sans-serif;
-  font-weight: bold;
 }
 
 #recommendation
@@ -242,7 +242,9 @@ span
   display: flex;
 	flex-direction: row;
   align-items: baseline;
+  font-family: 'ambleregular', sans-serif;
   font-weight: bold;
+  font-size: 1em;
 }
 
 .icon_title
