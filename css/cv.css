@@ -61,6 +61,7 @@ header
 
 #me
 {
+  font-family: 'ambleregular', sans-serif;
   background-color: #ffffff;
   color: #404040;
   width: 675px;
@@ -73,14 +74,6 @@ header
 {
   color: #feca07;
   font-size: 3em;
-  font-family: 'ambleregular', sans-serif;
-  font-weight: bold;
-}
-
-#me h2
-{
-  font-family: 'ambleregular', sans-serif;
-  font-weight: bold;
 }
 
 .name
@@ -88,6 +81,11 @@ header
   color: #404040;
   font-family: 'amblelight', sans-serif;
   font-weight: lighter;
+}
+
+#me h2
+{
+  font-weight: bold;
 }
 
 .border
@@ -220,17 +218,6 @@ h3
   font-weight: bold;
 }
 
-/*  éléments du footer */
-footer
-{
-  display: flex;
-  justify-content: center;
-  background-color: #282728;
-  width: 950px;
-  height: 20px;
-  margin: auto;
-}
-
 /* éléments font-awesome */
 span
 {
@@ -251,6 +238,7 @@ span
 {
   font-size: 1.5em; 
   color: #feca07;
+  margin-right: 15px;
 }
 
 .icon_leisure
@@ -380,16 +368,9 @@ span
   }
   
   #recommendation
-{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-  footer
   {
-    width: auto;
-    margin: auto;
-    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
 }
