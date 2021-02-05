@@ -29,7 +29,7 @@ body
   font-family: 'amblelight', sans-serif;
 }
 
-h3, p
+h3, p, ul
 {
   font-size: 0.8em;
 }
@@ -203,8 +203,8 @@ h3
 .company
 {
   width: 80%;
-
 }
+
 
 #recommendation
 {
