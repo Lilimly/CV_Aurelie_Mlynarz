@@ -40,7 +40,7 @@ header
     display: flex;
     justify-content: center;
     width: 950px;
-    margin: 20px auto auto auto;
+    margin: 10px auto auto auto;
 }
 
 #photo
@@ -55,8 +55,8 @@ header
 {
   border: 3.5px solid rgba(64, 64, 64, 0.2);
   border-radius: 50%;
-  margin-top: 2.5em;
-  margin-bottom: 2.5em;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 #me
@@ -67,7 +67,7 @@ header
   width: 675px;
   padding-right: 30px;
   padding-left: 30px;
-  padding-top: 30px;
+  padding-top: 5px;
 }
 
 #me h1
@@ -141,7 +141,7 @@ aside p
 
 #about
 {
-  padding: 20px 10px 240px 10px;
+  padding: 20px 10px 50px 10px;
 }
 
 #leisure
@@ -203,13 +203,6 @@ h3
 .company
 {
   width: 80%;
-}
-
-
-#recommendation
-{
-  display: flex;
-  justify-content: space-around;
 }
 
 .bold
