@@ -133,15 +133,23 @@ aside p
 #contact
 {
   padding-top: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   padding-left: 10px;
   font-family: 'ambleregular', sans-serif;
   font-weight: bold;
 }
 
+#techno
+{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  font-family: 'ambleregular', sans-serif;
+}
+
 #about
 {
-  padding: 20px 10px 50px 10px;
+  padding: 20px 10px 20px 10px;
 }
 
 #leisure
